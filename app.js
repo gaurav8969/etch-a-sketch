@@ -9,8 +9,6 @@ let toggleButton = document.querySelector(".buttons .toggle");
 //update the grid
 function update(){
     let side = slider[0].value;
-    let width = grid.getBoundingClientRect().width;
-    console.log("Width is "+ width);
 
     grid.replaceChildren();
     for(i = 0; i < side; i++){

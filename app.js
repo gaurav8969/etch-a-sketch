@@ -9,15 +9,16 @@ let toggleButton = document.querySelector(".buttons .toggle");
 //update the grid
 function update(){
     let side = slider[0].value;
-    let dimensions = 500/side;
+    let width = grid.getBoundingClientRect().width;
+    console.log("Width is "+ width);
 
     grid.replaceChildren();
     for(i = 0; i < side; i++){
         for(j = 0; j < side; j++){
             let gridBox = document.createElement("div");
             gridBox.style.boxSizing = "border-box";
-            gridBox.style.width = dimensions + "px";
-            gridBox.style.height = dimensions + "px";
+            gridBox.style.width = 100/side + "%";
+            gridBox.style.height = 100/side + "%";
             gridBox.style.border = "1px solid grey";
             gridBox.style.padding = 0;
             gridBox.style.margin = 0;
@@ -49,3 +50,5 @@ function toggle(){
 slider[0].addEventListener('input', update);
 clearButton.addEventListener('click',update);
 toggleButton.addEventListener('click', toggle);
+
+update();

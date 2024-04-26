@@ -30,6 +30,7 @@ body {
     background-color: #012a4a;
     color: #a9d6e5;
     font-weight: bolder;
+    margin-left:40px;
     margin-right:40px;
 }
 
@@ -71,6 +72,7 @@ body {
     display: flex;
     flex-flow: wrap;
     margin-left:40px;
+    margin-right:40px;
     width: 500px;
     height: 500px;
     cursor: crosshair;

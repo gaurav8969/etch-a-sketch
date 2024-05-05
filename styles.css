@@ -1,6 +1,7 @@
 body {
     background-color: #dad7cd;
     min-width:800px;
+    overflow-y:hidden;
 }
 
 .heading {
@@ -15,8 +16,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 500px;
 }
 
 .inspector {
